@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  busybox_container:
+    image: busybox
+    command: /bin/sh
+    stdin_open: true
+    tty: true
+
+  nginx_container:
+    image: nginx
+    ports:
+      - "8080:80"
+
